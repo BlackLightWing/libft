@@ -67,3 +67,27 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t size)
 		// 			|| (to_find[j] >= '0' && to_find[j] <= '9')))
 		// 		j++;
 		// }
+		/*
+		char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	size_t		i;
+	size_t		j;
+
+	i = 0;
+	if (*needle == '\0' || needle == NULL)
+		return ((char*)haystack);
+	while (haystack[i] != '\0' && i < len)
+	{
+		j = 0;
+		while (needle[j] == haystack[i + j] && i + j < len)
+		{
+			if (needle[j + 1] == '\0')
+			{
+				return ((char*)haystack + i);
+			}
+			j++;
+		}
+		i++;
+	}
+	return (NULL);
+}*/
